@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+  }
+.main-section{
+    display: flex;
+}
+.position-sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 20%;
+    height: 100vh;
+    font-size: 20px;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    padding-top: 2%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.position-sidebar-top{
+    display: flex;
+    flex-direction: column;
+}
+.position-sidebar-top > div{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.position-sidebar-top .icon{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.icon box-icon{
+    height: 50px;
+    width: 50px;
+}
+.sidebar-search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(123, 121, 121);
+    border-bottom: 1px solid rgb(123, 121, 121);
+}
+.sidebar-search input{
+    width: 90%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.sidebar-seft{
+    border-bottom: 1px solid rgb(123, 121, 121);
+}
+.sidebar-search box-icon{
+    position: absolute;
+    right: 5%;
+    bottom: 25px;
+}
+.sidebar-last > p{
+    color: rgb(149, 144, 144);
+    margin-bottom: 10px;
+}
+.playlist-name{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.main-content{
+    width: 88%;
+    background-image: linear-gradient(#474c45, #0b0b0b);
+}
+.install-App{
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom:1px solid rgb(123, 121, 121);
+}
+.install-App box-icon{
+    position: absolute;
+    right: 5%;
+    bottom: 25px;
+}
+body{
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.footer-section{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #272727;
+    padding-left: 1% ;
+    padding-right: 1% ;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-section .foot-left{
+    display: flex;
+}
+.footer-section .foot-left box-icon{
+    height: 50px;
+}
+.footer-section .foot-left .img{
+    height: 50px;
+    width: 50px;
+}
+.song-name{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-section .song-name-2{
+    font-size: 20px;
+}
+.footer-section .song-name .song-author{
+    font-size: 15px;
+}
+.foot-main .foot-toolbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foot-main .foot-music{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foot-main .foot-music .animation-music-parent{
+    width: 500px;
+    background-color: #f9f6f6;
+    height: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.foot-main .foot-music .animation-music-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #646161;
+    height: 100%;
+    animation-name: music-run;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+@keyframes music-run {
+    from{left: 0%;}
+    to{left: 100%;}
+}
+.foot-right{
+    display: flex;
+    align-items: center;
+}
+.foot-right a{
+    padding-left: 10px;
+}
+.foot-right-volumn{
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    margin-left: 10px;
+}
