@@ -84,6 +84,44 @@
     right: 5%;
     bottom: 25px;
 }
+.main-content{
+
+}
+.main-menu{
+    display: flex;  
+    justify-content: center;
+}
+.main-menu a{
+    margin: 50px;
+}
+.main-tile p{
+    text-align: center;
+}
+.main-tile p b{
+    font-size: 60px;
+    color: white;
+}
+.main-list-music{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.music-tile{
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+.music-img{
+    width: 200px;
+    height: 200px;
+    background-image: url(https://i.discogs.com/cdZMT23kEQJvU5S-gcFYZ4vZ8k08V2dCsoI_iXZ8jBk/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDAx/MjM1LTE2ODI0NjY5/ODMtOTU5NC5qcGVn.jpeg);
+    background-position: center;
+}
+.music-name{
+    color: white;
+    padding: 20px;
+}
+
 body{
     position: relative;
 }
@@ -130,6 +168,8 @@ a{
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 .foot-main .foot-music{
     display: flex;
